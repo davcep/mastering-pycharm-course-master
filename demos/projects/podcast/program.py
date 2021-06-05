@@ -22,7 +22,7 @@ def display_results():
     start = service.get_min_show_id()
     end = service.get_latest_show_id() + 1
 
-    for show_id in range(100, 270):
+    for show_id in range(100, 130):
         info = service.get_episode(show_id)
         print("{}. {}".format(info.show_id, info.title))
 
